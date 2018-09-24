@@ -12,11 +12,11 @@
 
 <h:body>
 
-	<form action="PrimeiroController" method="get">
+	<form action="PrimeiroController" method="post">
 	<% if(request.getAttribute("Nome") != null){ %>
 	<%="Olá "+request.getAttribute("Nome")%>
 	<%}else{ %>
-		<input type="submit" value="Enviar">
+		<input type="submit" value="Enviar" />
      <%} %>
 	</form>
 </h:body>
